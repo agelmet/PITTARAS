@@ -29,7 +29,7 @@
                             slate: '#64748b',   /* Balanced text slate */
                             accent: '#3b82f6',  /* Vivid modern blue */
                             border: '#e2e8f0',  /* Clear border */
-                            glass: 'rgba(255, 255, 255, 0.75)'
+                            glass: 'rgba(255, 255, 255, 0.85)'
                         }
                     },
                     fontFamily: {
@@ -60,7 +60,7 @@
                             '50%': { transform: 'translateY(-15px)' },
                         },
                         kenburns: {
-                            '0%': { transform: 'scale(1.1)' },
+                            '0%': { transform: 'scale(1.05)' },
                             '100%': { transform: 'scale(1)' },
                         },
                         marquee: {
@@ -92,7 +92,7 @@
             background: var(--tw-colors-mind-glass);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.8);
         }
 
         /* Float effect for About Image */
@@ -123,11 +123,6 @@
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body id="top" class="bg-mind-base text-mind-slate font-sans antialiased overflow-x-hidden selection:bg-mind-accent selection:text-white">
-
-    <div class="fixed inset-0 z-[-1] overflow-hidden pointer-events-none opacity-40">
-        <div class="absolute top-[-5%] right-[-5%] w-[35vw] h-[35vw] rounded-full bg-slate-200/50 mix-blend-multiply filter blur-[100px] animate-blob" style="animation-delay: 0s;"></div>
-        <div class="absolute bottom-[-10%] left-[-10%] w-[45vw] h-[45vw] rounded-full bg-blue-100/50 mix-blend-multiply filter blur-[120px] animate-blob" style="animation-delay: 3s;"></div>
-    </div>
 
     <nav class="fixed w-full z-50 transition-all duration-300 py-4" id="navbar">
         <div class="max-w-7xl mx-auto px-6">
@@ -165,21 +160,24 @@
     </nav>
 
     <section class="relative min-h-screen flex items-center pt-32 pb-20 px-6 overflow-hidden bg-mind-base">
+        
         <div class="absolute inset-0 z-0">
-            <div class="w-full h-full bg-cover bg-center animate-kenburns opacity-10" style="background-image: url('https://raw.githubusercontent.com/agelmet/PITTARAS/refs/heads/main/%CE%A0%CE%B9%CF%84%CF%84%CE%B1%CF%81%CE%AC%CF%82_%CE%86%CE%B3%CE%B3%CE%B5%CE%BB%CE%BF%CF%82_6.jpg');"></div>
+            <div class="w-full h-full bg-cover bg-center animate-kenburns" style="background-image: url('https://raw.githubusercontent.com/agelmet/PITTARAS/refs/heads/main/%CE%A0%CE%B9%CF%84%CF%84%CE%B1%CF%81%CE%AC%CF%82_%CE%86%CE%B3%CE%B3%CE%B5%CE%BB%CE%BF%CF%82_6.jpg');"></div>
         </div>
         
-        <div class="absolute inset-0 bg-gradient-to-t from-white via-white/80 to-mind-base z-10"></div>
+        <div class="absolute inset-0 bg-white/75 md:bg-white/65 z-10 backdrop-blur-[1px]"></div>
+        
+        <div class="absolute inset-0 bg-gradient-to-t from-mind-base via-transparent to-transparent z-10"></div>
 
         <div class="max-w-4xl mx-auto w-full text-center relative z-20 reveal">
-            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-nav text-mind-accent text-xs font-bold tracking-wider mb-8 bg-white/20 border-white/40 uppercase">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/50 backdrop-blur-sm text-mind-accent border border-white/80 shadow-sm text-xs font-bold tracking-wider mb-8 uppercase">
                 <span class="w-2 h-2 rounded-full bg-mind-accent animate-pulse"></span>
                 ΨΥΧΟΛΟΓΟΣ ΓΑΛΑΤΣΙ | ΑΡ. ΑΔΕΙΑΣ: 308463
             </div>
-            <h1 class="text-5xl lg:text-7xl font-serif text-mind-deep leading-[1.15] mb-8 drop-shadow-xl">
-                Γνωσιακή Συμπεριφορική Θεραπεία (CBT): <span class="text-mind-accent italic">Στοχευμένη Αλλαγή</span> με Ενσυναίσθηση.
+            <h1 class="text-5xl lg:text-7xl font-serif text-mind-deep leading-[1.15] mb-8 drop-shadow-sm">
+                Γνωσιακή Συμπεριφορική Θεραπεία (CBT): <br/><span class="text-mind-accent italic">Στοχευμένη Αλλαγή</span> με Ενσυναίσθηση.
             </h1>
-            <p class="text-lg text-mind-slate mb-12 max-w-2xl mx-auto leading-relaxed">
+            <p class="text-lg text-slate-700 mb-12 max-w-2xl mx-auto leading-relaxed font-medium drop-shadow-sm">
                 Ανακτήστε τον έλεγχο της ζωής σας. Ένας ασφαλής χώρος στο Γαλάτσι όπου η επιστήμη συναντά την ενσυναίσθηση, με πρακτικές και τεκμηριωμένες λύσεις.
             </p>
             <div class="flex flex-wrap items-center justify-center gap-4">
@@ -187,13 +185,12 @@
                     ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ
                     <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
                 </a>
-                <a href="#about" class="px-8 py-4 bg-transparent border border-mind-border text-mind-slate rounded-full font-bold hover:border-mind-accent hover:text-mind-accent transition-all">
+                <a href="#about" class="px-8 py-4 bg-white/60 backdrop-blur-md border border-slate-300 text-mind-deep rounded-full font-bold hover:bg-white hover:text-mind-accent hover:border-white transition-all shadow-sm">
                     ΓΝΩΡΙΣΤΕ ΜΕ
                 </a>
             </div>
         </div>
         
-        <div class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-white to-transparent z-20"></div>
     </section>
 
     <section id="about" class="py-24 px-6 relative z-20 bg-white">
@@ -227,7 +224,6 @@
     </section>
 
     <section id="services" class="py-24 px-6 bg-mind-base relative overflow-hidden">
-        <div class="absolute inset-0 z-0 opacity-10" style="background-image: url('https://github.com/agelmet/PITTARAS/blob/main/Πιτταράς_Άγγελος_9.jpg?raw=true');"></div>
         
         <div class="max-w-7xl mx-auto relative z-10">
             <div class="text-center mb-16 reveal">
@@ -439,6 +435,7 @@
             <div class="absolute right-0 top-0 bottom-0 w-20 md:w-40 bg-gradient-to-l from-mind-base to-transparent z-10"></div>
             
             <div class="marquee-container animate-marquee-fast md:animate-marquee gap-8 px-4">
+                
                 <div class="w-[360px] bg-white p-8 rounded-3xl shadow-sm border border-mind-border/40 shrink-0">
                     <div class="flex justify-between items-start mb-5">
                         <div>
