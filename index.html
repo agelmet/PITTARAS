@@ -46,6 +46,7 @@
                         'float': 'float 6s ease-in-out infinite',
                         'kenburns': 'kenburns 20s ease-out both',
                         'marquee': 'marquee 40s linear infinite',
+                        'marquee-fast': 'marquee 20s linear infinite', /* Faster version for mobile */
                     },
                     keyframes: {
                         blob: {
@@ -165,7 +166,7 @@
 
     <section class="relative min-h-screen flex items-center pt-32 pb-20 px-6 overflow-hidden bg-mind-base">
         <div class="absolute inset-0 z-0">
-            <div class="w-full h-full bg-cover bg-center animate-kenburns opacity-10" style="background-image: url('https://github.com/agelmet/PITTARAS/blob/main/Πιτταράς_Άγγελος_6.jpg?raw=true');"></div>
+            <div class="w-full h-full bg-cover bg-center animate-kenburns opacity-10" style="background-image: url('https://raw.githubusercontent.com/agelmet/PITTARAS/refs/heads/main/%CE%A0%CE%B9%CF%84%CF%84%CE%B1%CF%81%CE%AC%CF%82_%CE%86%CE%B3%CE%B3%CE%B5%CE%BB%CE%BF%CF%82_6.jpg');"></div>
         </div>
         
         <div class="absolute inset-0 bg-gradient-to-t from-white via-white/80 to-mind-base z-10"></div>
@@ -226,7 +227,7 @@
     </section>
 
     <section id="services" class="py-24 px-6 bg-mind-base relative overflow-hidden">
-        <div class="absolute inset-0 z-0 opacity-10 Kenburns Kenburns- Kenburns- Kenburns- Kenburns-" style="background-image: url('https://github.com/agelmet/PITTARAS/blob/main/Πιτταράς_Άγγελος_9.jpg?raw=true');"></div>
+        <div class="absolute inset-0 z-0 opacity-10" style="background-image: url('https://github.com/agelmet/PITTARAS/blob/main/Πιτταράς_Άγγελος_9.jpg?raw=true');"></div>
         
         <div class="max-w-7xl mx-auto relative z-10">
             <div class="text-center mb-16 reveal">
@@ -325,7 +326,7 @@
         <div class="max-w-7xl mx-auto relative z-10">
             <div class="text-center mb-20 reveal">
                 <span class="text-blue-300 font-bold tracking-widest text-sm uppercase">CBT PHILOSOPHY</span>
-                <h2 class="text-4xl md:text-5xl font-serif text-white mt-4 max-w-2xl mx-auto">«Πώς Εργαζόμαστε Μαζί: Η Φιλοσοφία & η Μέθοδος»</h2>
+                <h2 class="text-4xl md:text-5xl font-serif text-white mt-4 max-w-2xl mx-auto">Η Φιλοσοφία & η Μέθοδος</h2>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
@@ -437,7 +438,7 @@
             <div class="absolute left-0 top-0 bottom-0 w-20 md:w-40 bg-gradient-to-r from-mind-base to-transparent z-10"></div>
             <div class="absolute right-0 top-0 bottom-0 w-20 md:w-40 bg-gradient-to-l from-mind-base to-transparent z-10"></div>
             
-            <div class="marquee-container animate-marquee gap-8 px-4">
+            <div class="marquee-container animate-marquee-fast md:animate-marquee gap-8 px-4">
                 <div class="w-[360px] bg-white p-8 rounded-3xl shadow-sm border border-mind-border/40 shrink-0">
                     <div class="flex justify-between items-start mb-5">
                         <div>
