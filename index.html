@@ -24,11 +24,11 @@
                 extend: {
                     colors: {
                         mind: {
-                            base: '#f8f8f8',    /* Ultra-light minimal grey */
-                            deep: '#10141d',    /* Rich navy-black */
-                            slate: '#64748b',   /* Balanced text slate */
-                            accent: '#3b82f6',  /* Vivid modern blue */
-                            border: '#e2e8f0',  /* Clear border */
+                            base: '#f8f8f8',
+                            deep: '#10141d',
+                            slate: '#64748b',
+                            accent: '#3b82f6',
+                            border: '#e2e8f0',
                             glass: 'rgba(255, 255, 255, 0.85)'
                         }
                     },
@@ -46,7 +46,7 @@
                         'float': 'float 6s ease-in-out infinite',
                         'kenburns': 'kenburns 20s ease-out both',
                         'marquee': 'marquee 40s linear infinite',
-                        'marquee-fast': 'marquee 20s linear infinite', /* Faster version for mobile */
+                        'marquee-fast': 'marquee 20s linear infinite',
                     },
                     keyframes: {
                         blob: {
@@ -95,11 +95,11 @@
             border: 1px solid rgba(255, 255, 255, 0.8);
         }
 
-        /* Float effect for About Image */
+        /* Float effect */
         .img-float { transition: transform 0.8s ease; }
         .img-float:hover { transform: translateY(-10px); }
 
-        /* Lightbox styling (Ensures image is never cropped) */
+        /* Lightbox styling */
         #lightbox {
             opacity: 0; pointer-events: none; transition: opacity 0.4s ease;
             backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px);
@@ -115,7 +115,7 @@
             box-shadow: 0 30px 60px -15px rgba(59, 130, 246, 0.15);
         }
 
-        /* Marquee specific */
+        /* Marquee */
         .marquee-container { display: flex; width: fit-content; }
         .marquee-container:hover { animation-play-state: paused; }
     </style>
@@ -137,7 +137,7 @@
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#about" class="text-sm font-semibold text-mind-deep hover:text-mind-accent transition-colors">ΣΧΕΤΙΚΑ</a>
                     <a href="#services" class="text-sm font-semibold text-mind-deep hover:text-mind-accent transition-colors">ΥΠΗΡΕΣΙΕΣ</a>
-                    <a href="#pillars" class="text-sm font-semibold text-mind-deep hover:text-mind-accent transition-colors">ΠΡΟΣΕΓΓΙΣΗ</a>
+                    <a href="#philosophy" class="text-sm font-semibold text-mind-deep hover:text-mind-accent transition-colors">ΠΡΟΣΕΓΓΙΣΗ</a>
                     <a href="#space" class="text-sm font-semibold text-mind-deep hover:text-mind-accent transition-colors">ΧΩΡΟΣ</a>
                     <a href="#reviews" class="text-sm font-semibold text-mind-deep hover:text-mind-accent transition-colors">ΑΞΙΟΛΟΓΗΣΕΙΣ</a>
                     <a href="#contact" class="px-7 py-3 bg-mind-deep text-white rounded-full text-sm font-bold hover:bg-mind-accent hover:shadow-lg transition-all transform hover:-translate-y-1">ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ</a>
@@ -152,68 +152,54 @@
         <div id="mobile-menu" class="absolute top-full left-0 w-full bg-white/95 backdrop-blur-xl shadow-xl hidden flex-col items-center py-8 space-y-6 border-t border-mind-border/40">
             <a href="#about" class="text-lg font-bold text-mind-deep mobile-link">ΣΧΕΤΙΚΑ</a>
             <a href="#services" class="text-lg font-bold text-mind-deep mobile-link">ΥΠΗΡΕΣΙΕΣ</a>
-            <a href="#pillars" class="text-lg font-bold text-mind-deep mobile-link">ΠΡΟΣΕΓΓΙΣΗ</a>
+            <a href="#philosophy" class="text-lg font-bold text-mind-deep mobile-link">ΠΡΟΣΕΓΓΙΣΗ</a>
             <a href="#space" class="text-lg font-bold text-mind-deep mobile-link">ΧΩΡΟΣ</a>
             <a href="#reviews" class="text-lg font-bold text-mind-deep mobile-link">ΑΞΙΟΛΟΓΗΣΕΙΣ</a>
             <a href="#contact" class="px-8 py-3 bg-mind-deep text-white rounded-full text-lg font-bold mobile-link">ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ</a>
         </div>
     </nav>
 
-    <section class="relative min-h-screen flex items-center pt-32 pb-20 px-6 overflow-hidden bg-mind-base">
-        
+    <section class="relative min-h-screen flex items-center overflow-hidden bg-mind-base">
         <div class="absolute inset-0 z-0">
             <div class="w-full h-full bg-cover bg-center animate-kenburns" style="background-image: url('https://raw.githubusercontent.com/agelmet/PITTARAS/refs/heads/main/%CE%A0%CE%B9%CF%84%CF%84%CE%B1%CF%81%CE%AC%CF%82_%CE%86%CE%B3%CE%B3%CE%B5%CE%BB%CE%BF%CF%82_6.jpg');"></div>
         </div>
         
-        <div class="absolute inset-0 bg-white/75 md:bg-white/65 z-10 backdrop-blur-[1px]"></div>
-        
-        <div class="absolute inset-0 bg-gradient-to-t from-mind-base via-transparent to-transparent z-10"></div>
-
-        <div class="max-w-4xl mx-auto w-full text-center relative z-20 reveal">
-            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/50 backdrop-blur-sm text-mind-accent border border-white/80 shadow-sm text-xs font-bold tracking-wider mb-8 uppercase">
-                <span class="w-2 h-2 rounded-full bg-mind-accent animate-pulse"></span>
-                ΨΥΧΟΛΟΓΟΣ ΓΑΛΑΤΣΙ | ΑΡ. ΑΔΕΙΑΣ: 308463
-            </div>
-            <h1 class="text-5xl lg:text-7xl font-serif text-mind-deep leading-[1.15] mb-8 drop-shadow-sm">
-                Γνωσιακή Συμπεριφορική Θεραπεία (CBT): <br/><span class="text-mind-accent italic">Στοχευμένη Αλλαγή</span> με Ενσυναίσθηση.
-            </h1>
-            <p class="text-lg text-slate-700 mb-12 max-w-2xl mx-auto leading-relaxed font-medium drop-shadow-sm">
-                Ανακτήστε τον έλεγχο της ζωής σας. Ένας ασφαλής χώρος στο Γαλάτσι όπου η επιστήμη συναντά την ενσυναίσθηση, με πρακτικές και τεκμηριωμένες λύσεις.
-            </p>
-            <div class="flex flex-wrap items-center justify-center gap-4">
-                <a href="#contact" class="px-8 py-4 bg-mind-deep text-white rounded-full font-bold hover:bg-mind-accent transition-colors shadow-glow flex items-center gap-2 group">
-                    ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ
-                    <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
-                </a>
-                <a href="#about" class="px-8 py-4 bg-white/60 backdrop-blur-md border border-slate-300 text-mind-deep rounded-full font-bold hover:bg-white hover:text-mind-accent hover:border-white transition-all shadow-sm">
-                    ΓΝΩΡΙΣΤΕ ΜΕ
-                </a>
-            </div>
-        </div>
-        
+        <div class="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent z-10"></div>
     </section>
 
     <section id="about" class="py-24 px-6 relative z-20 bg-white">
         <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-16 items-center">
             <div class="lg:col-span-5 relative reveal">
                 <div class="aspect-[3/4] rounded-[3rem] overflow-hidden shadow-2xl animate-float relative z-10 border-[8px] border-mind-base group-hover:shadow-soft transition-shadow duration-500">
-                    <img src="https://github.com/agelmet/PITTARAS/blob/main/Πιτταράς_Άγγελος_3.jpg?raw=true" alt="Portrait Pittaras" class="w-full h-full object-cover">
+                    <img src="https://github.com/agelmet/PITTARAS/blob/main/Πιτταράς_Άγγελος_3.jpg?raw=true" alt="Άγγελος Πιτταράς" class="w-full h-full object-cover">
                 </div>
                 <div class="absolute -bottom-10 -left-10 w-48 h-48 bg-blue-100/60 rounded-full z-0 blur-[50px]"></div>
             </div>
 
             <div class="lg:col-span-7 reveal reveal-delay-2 text-center lg:text-left">
-                <span class="text-mind-slate font-bold tracking-widest text-sm uppercase">Ο ΘΕΡΑΠΕΥΤΗΣ ΣΑΣ</span>
                 <h2 class="text-4xl md:text-5xl font-serif text-mind-deep mt-2 mb-8">Άγγελος Πιτταράς</h2>
+                
                 <div class="space-y-6 text-lg text-mind-slate leading-relaxed max-w-2xl mx-auto lg:mx-0">
                     <p>
-                        Ο <strong>Άγγελος Πιτταράς</strong> είναι αδειούχος Ψυχολόγος (Αρ. Αδείας: 308463) και διατηρεί το ιδιωτικό του γραφείο στο Γαλάτσι. Το ακαδημαϊκό του υπόβαθρο στηρίζεται στο <strong>Εθνικό και Καποδιστριακό Πανεπιστήμιο Αθηνών (ΕΚΠΑ)</strong>, από το Τμήμα Ψυχολογίας του οποίου έλαβε το πτυχίο του.
+                        Είμαι Ψυχολόγος με άδεια ασκήσεως επαγγέλματος (Αρ. Αδείας: 308463) απόφοιτος του Τμήματος Ψυχολογίας του <strong>Εθνικού Καποδιστριακού Πανεπιστημίου Αθηνών</strong> και διατηρώ το ιδιωτικό μου γραφείο στο Γαλάτσι.
                     </p>
                     <p>
-                        Επιθυμώντας να προσφέρει πρακτικές και επιστημονικά τεκμηριωμένες λύσεις στους θεραπευόμενούς του, εξειδικεύτηκε στη <strong>Γνωσιακή Συμπεριφορική Ψυχοθεραπεία (CBT)</strong> στο Κέντρο Εφαρμοσμένης Ψυχοθεραπείας και Συμβουλευτικής.
+                        Έχω ειδικευτεί στη <strong>Γνωσιακή Συμπεριφορική Ψυχοθεραπεία (CBT)</strong> στο Κέντρο Εφαρμοσμένης Ψυχοθεραπείας και Συμβουλευτικής.
                     </p>
                     <p>
-                        Η επαγγελματική του πορεία περιλαμβάνει σημαντική εμπειρία στην κοινότητα, έχοντας εργαστεί ως Ψυχολόγος στον Δήμο Πετρούπολης. Αυτή η τριβή με ένα ευρύ φάσμα κοινωνικών και ψυχολογικών αναγκών ενίσχυσε τη θεραπευτική του ευελιξία και τον σεβασμό του προς τη μοναδικότητα κάθε ανθρώπου. 
+                        Παραμένω ενήμερος για τις νέες επιστημονικές εξελίξεις μέσω μετεκπαιδεύσεων καθώς και παρακολούθησης πλήθος σεμιναρίων και συνεδρίων.
+                    </p>
+                    <p>
+                        Στο ιδιωτικό μου γραφείο παρέχω ατομική ψυχοθεραπεία ενηλίκων τόσο δια ζώσης όσο και διαδικτυακά.
+                    </p>
+                    <p>
+                        Η εργασιακή μου εμπειρία περιλαμβάνει τη ψυχοθεραπεία ενηλίκων στην απαιτητική εποχή του COVID 19 μέσω διαδικτυακών συνεδριών στήριξης, την ψυχοθεραπεία παιδιών και εφήβων, τη παροχή στήριξης σε παιδιά με ψυχοσυναισθηματικές δυσκολίες και διάχυτες αναπτυξιακές διαταραχές, καθώς και τη συμβουλευτική γονέων.
+                    </p>
+                    <p>
+                        Σημαντικό ορόσημο στην επαγγελματική μου σταδιοδρομία αποτελεί η εργασία μου ως Ψυχολόγος σε πρόγραμμα στήριξης του Δήμου Πετρούπολης. Η εργασία στη κοινότητα και η τριβή με ένα ευρύ φάσμα κοινωνικών και ψυχολογικών αναγκών διαμόρφωσε τη θεραπευτική μου οπτική που βασίζεται στη μοναδικότητα και στο σεβασμό του κάθε ατόμου.
+                    </p>
+                    <p>
+                        Θα χαρώ πολύ να σας γνωρίσω και να ξεκινήσουμε μαζί το ψυχοθεραπευτικό σας ταξίδι.
                     </p>
                     <blockquote class="border-l-4 border-mind-accent pl-6 py-4 my-10 text-xl font-serif text-mind-deep italic bg-mind-base rounded-r-2xl text-left max-w-xl mx-auto lg:mx-0">
                         "Στο γραφείο παρέχεται ένας ασφαλής χώρος όπου ο θεραπευόμενος μπορεί να αναγνωρίσει τα δυσλειτουργικά του μοτίβα και να ανακτήσει τον έλεγχο της ζωής του."
@@ -232,80 +218,45 @@
                 <div class="w-20 h-1 bg-mind-accent mx-auto rounded-full"></div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 
-                <div class="service-card group bg-white p-12 rounded-[3rem] shadow-sm border border-mind-border/60 relative overflow-hidden reveal transition-all duration-500">
-                    <div class="absolute -top-10 -right-10 w-40 h-40 bg-blue-50/50 rounded-full group-hover:scale-110 transition-transform duration-700"></div>
-                    
-                    <div class="relative z-10">
-                        <div class="w-20 h-20 bg-blue-50 text-mind-accent rounded-3xl flex items-center justify-center mb-8 border border-blue-100 group-hover:border-mind-accent transition-colors">
-                            <i data-lucide="brain-circuit" class="w-10 h-10"></i>
+                <div class="service-card group bg-white p-10 rounded-[2.5rem] shadow-sm border border-mind-border/60 relative overflow-hidden reveal transition-all duration-500 flex flex-col items-center text-center justify-center min-h-[220px]">
+                    <div class="absolute -top-10 -right-10 w-32 h-32 bg-blue-50/50 rounded-full group-hover:scale-110 transition-transform duration-700"></div>
+                    <div class="relative z-10 flex flex-col items-center">
+                        <div class="w-16 h-16 bg-blue-50 text-mind-accent rounded-2xl flex items-center justify-center mb-6 border border-blue-100 group-hover:border-mind-accent transition-colors">
+                            <i data-lucide="brain-circuit" class="w-8 h-8"></i>
                         </div>
-                        <h3 class="text-3xl font-bold text-mind-deep mb-6 leading-tight">Διαχείριση Άγχους, Φοβιών & Κρίσεων Πανικού (CBT)</h3>
-                        <p class="text-mind-slate mb-8 text-base leading-relaxed">
-                            Η CBT αποτελεί διεθνώς τη θεραπεία εκλογής για τις αγχώδεις διαταραχές. Μαζί εντοπίζουμε τις "καταστροφικές" σκέψεις. Μέσα από πρακτικά εργαλεία, τεχνικές χαλάρωσης και σταδιακή έκθεση, μαθαίνετε πώς να διαχειρίζεστε τα σωματικά συμπτώματα και να επιστρέφετε σε μια ήρεμη καθημερινότητα.
-                        </p>
-                        <div class="flex flex-wrap gap-2 pt-2 border-t border-mind-border/50">
-                            <span class="px-3 py-1 bg-slate-100 text-mind-slate text-xs font-semibold rounded-full">Συμβουλευτική Άγχους</span>
-                            <span class="px-3 py-1 bg-slate-100 text-mind-slate text-xs font-semibold rounded-full">Κρίσεις Πανικού</span>
-                            <span class="px-3 py-1 bg-slate-100 text-mind-slate text-xs font-semibold rounded-full">Φοβίες</span>
-                        </div>
+                        <h3 class="text-2xl font-bold text-mind-deep leading-snug">Διαχείριση Άγχους, Φοβιών & Κρίσεων Πανικού (CBT)</h3>
                     </div>
                 </div>
 
-                <div class="service-card group bg-white p-12 rounded-[3rem] shadow-sm border border-mind-border/60 relative overflow-hidden reveal reveal-delay-1 transition-all duration-500">
-                    <div class="absolute -top-10 -right-10 w-40 h-40 bg-blue-50/50 rounded-full group-hover:scale-110 transition-transform duration-700"></div>
-                    
-                    <div class="relative z-10">
-                        <div class="w-20 h-20 bg-blue-50 text-mind-accent rounded-3xl flex items-center justify-center mb-8 border border-blue-100 group-hover:border-mind-accent transition-colors">
-                            <i data-lucide="cloud-rain" class="w-10 h-10"></i>
+                <div class="service-card group bg-white p-10 rounded-[2.5rem] shadow-sm border border-mind-border/60 relative overflow-hidden reveal reveal-delay-1 transition-all duration-500 flex flex-col items-center text-center justify-center min-h-[220px]">
+                    <div class="absolute -top-10 -right-10 w-32 h-32 bg-blue-50/50 rounded-full group-hover:scale-110 transition-transform duration-700"></div>
+                    <div class="relative z-10 flex flex-col items-center">
+                        <div class="w-16 h-16 bg-blue-50 text-mind-accent rounded-2xl flex items-center justify-center mb-6 border border-blue-100 group-hover:border-mind-accent transition-colors">
+                            <i data-lucide="cloud-rain" class="w-8 h-8"></i>
                         </div>
-                        <h3 class="text-3xl font-bold text-mind-deep mb-6 leading-tight">Κατάθλιψη, Πένθος & Διαχείριση Θυμού</h3>
-                        <p class="text-mind-slate mb-8 text-base leading-relaxed">
-                            Παρέχεται ένα απόλυτα ασφαλές και μη-επικριτικό πλαίσιο. Εντοπίζουμε τις αρνητικές πεποιθήσεις (π.χ. "όλα πάνε στραβά") και τις αντικαθιστούμε με ρεαλιστικές, λειτουργικές σκέψεις, αποκαθιστώντας σταδιακά τη διάθεση και την ενέργειά σας.
-                        </p>
-                        <div class="flex flex-wrap gap-2 pt-2 border-t border-mind-border/50">
-                            <span class="px-3 py-1 bg-slate-100 text-mind-slate text-xs font-semibold rounded-full">Κατάθλιψη</span>
-                            <span class="px-3 py-1 bg-slate-100 text-mind-slate text-xs font-semibold rounded-full">Πένθος</span>
-                            <span class="px-3 py-1 bg-slate-100 text-mind-slate text-xs font-semibold rounded-full">Διαχείριση Θυμού</span>
-                        </div>
+                        <h3 class="text-2xl font-bold text-mind-deep leading-snug">Κατάθλιψη, Πένθος & Διαχείριση Θυμού</h3>
                     </div>
                 </div>
 
-                <div class="service-card group bg-white p-12 rounded-[3rem] shadow-sm border border-mind-border/60 relative overflow-hidden reveal transition-all duration-500">
-                    <div class="absolute -top-10 -right-10 w-40 h-40 bg-blue-50/50 rounded-full group-hover:scale-110 transition-transform duration-700"></div>
-                    
-                    <div class="relative z-10">
-                        <div class="w-20 h-20 bg-blue-50 text-mind-accent rounded-3xl flex items-center justify-center mb-8 border border-blue-100 group-hover:border-mind-accent transition-colors">
-                            <i data-lucide="users" class="w-10 h-10"></i>
+                <div class="service-card group bg-white p-10 rounded-[2.5rem] shadow-sm border border-mind-border/60 relative overflow-hidden reveal transition-all duration-500 flex flex-col items-center text-center justify-center min-h-[220px]">
+                    <div class="absolute -top-10 -right-10 w-32 h-32 bg-blue-50/50 rounded-full group-hover:scale-110 transition-transform duration-700"></div>
+                    <div class="relative z-10 flex flex-col items-center">
+                        <div class="w-16 h-16 bg-blue-50 text-mind-accent rounded-2xl flex items-center justify-center mb-6 border border-blue-100 group-hover:border-mind-accent transition-colors">
+                            <i data-lucide="users" class="w-8 h-8"></i>
                         </div>
-                        <h3 class="text-3xl font-bold text-mind-deep mb-6 leading-tight">Σχέσεις, Αυτοεκτίμηση & Ατομική Ψυχοθεραπεία</h3>
-                        <p class="text-mind-slate mb-8 text-base leading-relaxed">
-                            Η θεραπεία αποτελεί το ισχυρότερο εργαλείο προσωπικής ανάπτυξης. Εργαζόμαστε πάνω στην ανοικοδόμηση της αυτοεκτίμησης και, μέσω συμβουλευτικής σχέσεων, μαθαίνετε διεκδικητική επικοινωνία (assertiveness) και θέσπιση υγιών ορίων.
-                        </p>
-                        <div class="flex flex-wrap gap-2 pt-2 border-t border-mind-border/50">
-                            <span class="px-3 py-1 bg-slate-100 text-mind-slate text-xs font-semibold rounded-full">Ατομική 50'</span>
-                            <span class="px-3 py-1 bg-slate-100 text-mind-slate text-xs font-semibold rounded-full">Συμβουλευτική Σχέσεων</span>
-                            <span class="px-3 py-1 bg-slate-100 text-mind-slate text-xs font-semibold rounded-full">Αυτοεκτίμηση</span>
-                        </div>
+                        <h3 class="text-2xl font-bold text-mind-deep leading-snug">Σχέσεις, Αυτοεκτίμηση & Ατομική Ψυχοθεραπεία</h3>
                     </div>
                 </div>
 
-                <div class="service-card group bg-white p-12 rounded-[3rem] shadow-sm border border-mind-border/60 relative overflow-hidden reveal reveal-delay-1 transition-all duration-500">
-                    <div class="absolute -top-10 -right-10 w-40 h-40 bg-blue-50/50 rounded-full group-hover:scale-110 transition-transform duration-700"></div>
-                    
-                    <div class="relative z-10">
-                        <div class="w-20 h-20 bg-blue-50 text-mind-accent rounded-3xl flex items-center justify-center mb-8 border border-blue-100 group-hover:border-mind-accent transition-colors">
-                            <i data-lucide="laptop" class="w-10 h-10"></i>
+                <div class="service-card group bg-white p-10 rounded-[2.5rem] shadow-sm border border-mind-border/60 relative overflow-hidden reveal reveal-delay-1 transition-all duration-500 flex flex-col items-center text-center justify-center min-h-[220px]">
+                    <div class="absolute -top-10 -right-10 w-32 h-32 bg-blue-50/50 rounded-full group-hover:scale-110 transition-transform duration-700"></div>
+                    <div class="relative z-10 flex flex-col items-center">
+                        <div class="w-16 h-16 bg-blue-50 text-mind-accent rounded-2xl flex items-center justify-center mb-6 border border-blue-100 group-hover:border-mind-accent transition-colors">
+                            <i data-lucide="laptop" class="w-8 h-8"></i>
                         </div>
-                        <h3 class="text-3xl font-bold text-mind-deep mb-6 leading-tight">Διαδικτυακή Ψυχοθεραπεία (Online)</h3>
-                        <p class="text-mind-slate mb-8 text-base leading-relaxed">
-                            Για την καλύτερη εξυπηρέτησή σας, οι συνεδρίες CBT προσφέρονται και διαδικτυακά. Η μέθοδος προσαρμόζεται άριστα στο ψηφιακό περιβάλλον, προσφέροντας την ίδια ποιότητα, δομή και εχεμύθεια, ανεξάρτητα από τον τόπο διαμονής σας.
-                        </p>
-                        <div class="flex flex-wrap gap-2 pt-2 border-t border-mind-border/50">
-                            <span class="px-3 py-1 bg-slate-100 text-mind-slate text-xs font-semibold rounded-full">Βιντεοκλήση 50'</span>
-                            <span class="px-3 py-1 bg-slate-100 text-mind-slate text-xs font-semibold rounded-full">Ευελιξία</span>
-                        </div>
+                        <h3 class="text-2xl font-bold text-mind-deep leading-snug">Διαδικτυακή Ψυχοθεραπεία (Online)</h3>
                     </div>
                 </div>
 
@@ -313,57 +264,25 @@
         </div>
     </section>
 
-    <section id="pillars" class="py-24 px-6 bg-mind-deep text-white relative overflow-hidden">
+    <section id="philosophy" class="py-24 px-6 bg-mind-deep text-white relative overflow-hidden">
         <div class="absolute inset-0 z-0 opacity-20">
             <div class="absolute top-[-20%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-blue-500/30 blur-[120px]"></div>
             <div class="absolute bottom-[-20%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-slate-500/30 blur-[120px]"></div>
         </div>
 
-        <div class="max-w-7xl mx-auto relative z-10">
-            <div class="text-center mb-20 reveal">
-                <span class="text-blue-300 font-bold tracking-widest text-sm uppercase">CBT PHILOSOPHY</span>
-                <h2 class="text-4xl md:text-5xl font-serif text-white mt-4 max-w-2xl mx-auto">Η Φιλοσοφία & η Μέθοδος</h2>
+        <div class="max-w-4xl mx-auto relative z-10 text-center">
+            <div class="mb-12 reveal">
+                <h2 class="text-3xl md:text-5xl font-serif text-white mt-4 leading-tight">Λίγα λόγια για τη Γνωσιακή Συμπεριφορική Ψυχοθεραπεία</h2>
+                <div class="w-20 h-1 bg-mind-accent mx-auto rounded-full mt-8"></div>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="relative p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors group reveal">
-                    <span class="absolute -top-6 right-4 text-8xl font-black text-white/5 group-hover:text-white/10 transition-colors z-0 select-none">1</span>
-                    <div class="relative z-10">
-                        <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 border border-blue-500/40">
-                            <i data-lucide="building-2" class="w-6 h-6 text-blue-300"></i>
-                        </div>
-                        <h4 class="text-xl font-bold text-white mb-4">Στέρεη Ακαδημαϊκή Βάση (ΕΚΠΑ)</h4>
-                        <p class="text-slate-300 text-sm leading-relaxed">
-                            Η αποφοίτησή μου από το Εθνικό και Καποδιστριακό Πανεπιστήμιο Αθηνών εγγυάται τη σοβαρότητα και την επιστημονική εγκυρότητα της γνώσης μου.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="relative p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors group reveal reveal-delay-1">
-                    <span class="absolute -top-6 right-4 text-8xl font-black text-white/5 group-hover:text-white/10 transition-colors z-0 select-none">2</span>
-                    <div class="relative z-10">
-                        <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 border border-blue-500/40">
-                            <i data-lucide="target" class="w-6 h-6 text-blue-300"></i>
-                        </div>
-                        <h4 class="text-xl font-bold text-white mb-4">Πρακτική & Μετρήσιμη Μέθοδος</h4>
-                        <p class="text-slate-300 text-sm leading-relaxed">
-                            Η CBT δεν αναλώνεται σε αέναες συζητήσεις. Εστιάζει στο "εδώ και τώρα" και σας εξοπλίζει με τεχνικές, καθιστώντας σας σταδιακά "θεραπευτή του εαυτού σας".
-                        </p>
-                    </div>
-                </div>
-
-                <div class="relative p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors group reveal reveal-delay-2">
-                    <span class="absolute -top-6 right-4 text-8xl font-black text-white/5 group-hover:text-white/10 transition-colors z-0 select-none">3</span>
-                    <div class="relative z-10">
-                        <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 border border-blue-500/40">
-                            <i data-lucide="heart-handshake" class="w-6 h-6 text-blue-300"></i>
-                        </div>
-                        <h4 class="text-xl font-bold text-white mb-4">Κοινωνική & Κλινική Ενσυναίσθηση</h4>
-                        <p class="text-slate-300 text-sm leading-relaxed">
-                            Η προϋπηρεσία μου στον Δήμο Πετρούπολης με έμαθε να ακούω χωρίς προκαταλήψεις και να προσαρμόζω τη θεραπεία με απόλυτο σεβασμό στη δική σας, μοναδική ιστορία.
-                        </p>
-                    </div>
-                </div>
+            <div class="bg-white/5 border border-white/10 p-8 md:p-12 rounded-[2.5rem] reveal backdrop-blur-sm text-lg text-slate-300 leading-relaxed shadow-2xl">
+                <p class="mb-6">
+                    Η Γνωσιακή Συμπεριφορική Ψυχοθεραπεία αποτελεί μια διεθνώς αναγνωρισμένη ψυχοθεραπευτική προσέγγιση με τεκμηριωμένη επιστημονική αποτελεσματικότητα.
+                </p>
+                <p>
+                    Μαζί θα εστιάσουμε στις σκέψεις, τα συναισθήματα καθώς και τις συμπεριφορές που μπορεί να...
+                </p>
             </div>
         </div>
     </section>
@@ -514,7 +433,7 @@
                         </div>
                         <img src="https://www.doctoranytime.gr/images/logo-rebranding.svg" class="h-4 opacity-50" alt="DA Logo">
                     </div>
-                    <p class="text-mind-slate text-sm mb-6 italic leading-relaxed line-clamp-5">"Εξαιρετικός επαγγελματίας, με αφοσίωση... Οι παρεμβάσεις του ανοίγουν νέους ορίζοντες σκέψης, πάντα σε πλαίσιο ασφάλειας. Life changing experience."</p>
+                    <p class="text-mind-slate text-sm mb-6 italic leading-relaxed line-clamp-5">"Εξαιρετικός επαγγελματίας... Βάσει της ηθικής, της ενσυναίσθησης και της εξαιρετικής του αντίληψης θα τον συνιστούσα ανεπιφύλακτα. Αφήνει χώρο και χρόνο... Life changing experience."</p>
                     <div class="border-t border-mind-border/40 pt-4">
                         <p class="text-xs font-bold text-mind-deep">MARIA</p>
                         <p class="text-xs text-mind-slate">11 Δεκεμβρίου 2024</p>
@@ -612,7 +531,7 @@
             }
         });
 
-        // 4. Scroll Reveal Animations (Intersection Observer)
+        // 4. Scroll Reveal Animations
         const observerOptions = {
             root: null,
             rootMargin: '0px',
